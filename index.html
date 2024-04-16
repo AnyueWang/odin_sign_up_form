@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    
+
+    <div class="pic-container">
+        <div class="title">
+            <img class="logo" src="./resources/images/logo.png" />
+            <h1>VR PETS</h1>
+        </div>
+        <footer>Photo by <a class="reference" href="https://unsplash.com/@magict1911">Timo Volz</a> on <a
+                class="reference" href="https://unsplash.com/">Unsplash</a></footer>
+    </div>
+
+    <div class="sign-up-container">
+        <form action="#" id="sign-up">
+            <div class="description">
+                <p>Do you want to be a friend with a cat? Do you want to play with it all day long via your VR device?
+                    VR PETS will randomly pick the most suitable one for you. </p>
+                <p>Have fun by signing up!</p>
+            </div>
+            <div class="sign-up-form">
+                <h2>Join us!</h2>
+                <div class="form">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" class="info-input" id="first-name" name="first-name" required/>
+                    </div>
+
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" class="info-input" id="last-name" name="last-name" required/>
+                    </div>
+
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" class="info-input" id="email" name="email" required/>
+                    </div>
+
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" class="info-input" id="phone" name="phone" required/>
+                    </div>
+
+                    <div>
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" class="info-input" id="pwd" name="pwd" minlength="8" maxlength="20" required/>
+                    </div>
+
+                    <div>
+                        <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" class="info-input" id="pwd-confirm" name="pwd-confirm" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-form">
+                <button type="submit" id="btn-submit">Create Account</button>
+                <p>Already have an account? <a class="log-in" href="#">Log in</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+
 </body>
+
 </html>
